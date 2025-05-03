@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csl xmlns="http://purl.org/net/xbiblio/csl" version="1.0">
+  <info>
+    <title>Custom Citation Style</title>
+    <author>
+      <name>ChatGPT</name>
+    </author>
+    <id>urn:citeproc:style:custom</id>
+    <link href="http://www.openxmlformats.org/2013/csl" rel="self"/>
+  </info>
+  
+  <citation>
+    <layout delimiter=". ">
+      <group delimiter=". ">
+        <names variable="author">
+          <name name-as-sort-order="first" initialize-with="." delimiter=", "/>
+        </names>
+        <text variable="title"/>
+        <text variable="container-title" font-style="italic"/>
+        <group delimiter=";">
+          <date variable="issued">
+            <date-part name="year"/>
+          </date>
+          <group delimiter=":">
+            <text variable="volume"/>
+            <text variable="issue" font-weight="bold" prefix="(" suffix=")"/>
+            <text variable="page"/>
+          </group>
+        </group>
+      </group>
+    </layout>
+  </citation>
+  
+  <bibliography>
+    <layout delimiter=". ">
+      <group delimiter=". ">
+        <names variable="author">
+          <name name-as-sort-order="first" initialize-with="." delimiter=", "/>
+        </names>
+        <text variable="title"/>
+        <text variable="container-title" font-style="italic"/>
+        <group delimiter=";">
+          <date variable="issued">
+            <date-part name="year"/>
+          </date>
+          <group delimiter=":">
+            <text variable="volume"/>
+            <text variable="issue" font-weight="bold" prefix="(" suffix=")"/>
+            <text variable="page"/>
+          </group>
+        </group>
+      </group>
+    </layout>
+  </bibliography>
+</csl>
